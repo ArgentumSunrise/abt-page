@@ -1,0 +1,118 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200);
+@font-face {
+    font-family: John;
+    src: url(fonts/Big-John.otf);
+}
+
+@font-face {
+    font-family: Joe;
+    src: url(fonts/Slim-Joe.otf);
+}
+
+@keyframes arrowFlash {
+    0% {
+        border-top: 30px solid #dcdcdc;
+    }
+    30% {
+        border-top: 30px solid #999;
+    }
+    60% {
+        border-top: 30px solid #dcdcdc;
+    }
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    color: black;
+    line-height: 1.6;
+}
+
+a {
+    color: #2980b9;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+a:hover {
+    color: #3498db;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid #dcdcdc;
+    margin: 0 auto;
+    margin-top: 150px;
+    animation: arrowFlash 3s infinite;
+    -webkit-animation: arrowFlash 3s ease-in-out 3s infinite;
+    cursor: pointer;
+}
+
+#title {
+    background: url(imgs/mountain-1.jpg) repeat;
+}
+
+h1 {
+    line-height: 1.2;
+    font-size: 250px;
+    font-family: John;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 60px;
+    font-family: Joe;
+    margin-top: -70px;
+}
+
+#abt h2 {
+    margin-top: -150px;
+}
+
+.page {
+    height: 90vh;
+}
+
+#abt-page {
+    padding: 0 120px;
+    font-family: Source Sans Pro;
+    font-size: 30px;
+    line-height: 1.6;
+    height: 80vh;
+}
+
+#abt-page p {
+    text-align: justify;
+}
+
+#abt-page img {
+    margin-top: 40px;
+    max-width: 150px;
+}
+
+#title {
+    color: transparent;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    padding: 200px 20px;
+}
