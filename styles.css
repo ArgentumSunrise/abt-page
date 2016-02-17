@@ -65,7 +65,7 @@ a:hover {
 }
 
 #title {
-    background: -webkit-linear-gradient(transparent, transparent), url(imgs/mountain-1.jpg) repeat;
+    background: -webkit-linear-gradient(transparent, transparent), url(imgs/mountain1.jpg) repeat;
     padding: 200px 20px;
     padding-bottom: 300px;
 }
@@ -106,20 +106,56 @@ h2 {
     max-width: 150px;
 }
 
+.skill h1 {
+    font-size: 125px;
+}
+
+#skill-page {
+    padding-bottom: 300px;
+}
+
 #proj-page h2 {
     margin-bottom: 75px;
 }
 
 #proj-page h1 {
-    font-size: 150px;
+    font-size: 125px;
 }
 
-#proj-page {
+#proj-page h1 a {
+    color: black;
+}
+
+#proj-page h1 a:hover {
+    color: #2980b9;
+}
+
+#s1 {
+    background: -webkit-linear-gradient(transparent, transparent), url(imgs/space.jpg) repeat;
+}
+
+#s2 {
+    background: -webkit-linear-gradient(transparent, transparent), url(imgs/mountain2.jpg) repeat;
+}
+
+#s3 {
+    background: -webkit-linear-gradient(transparent, transparent), url(imgs/aurora.jpg) repeat;
+}
+
+#s4 {
+    background: -webkit-linear-gradient(transparent, transparent), url(imgs/reef.jpg) repeat;
+}
+
+#s5 {
     background: -webkit-linear-gradient(transparent, transparent), url(imgs/underwater.jpg) repeat;
 }
 
 #title,
-#proj-page {
+#s1,
+#s2,
+#s3,
+#s4,
+#s5 {
     color: black;
     -webkit-text-fill-color: transparent;
     background: -o-linear-gradient(transparent, transparent);
