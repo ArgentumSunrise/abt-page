@@ -65,8 +65,9 @@ a:hover {
 }
 
 #title {
-    background: url(imgs/mountain-1.jpg) repeat;
-    padding-bottom: 200px;
+    background: -webkit-linear-gradient(transparent, transparent), url(imgs/mountain-1.jpg) repeat;
+    padding: 200px 20px;
+    padding-bottom: 300px;
 }
 
 h1 {
@@ -105,14 +106,26 @@ h2 {
     max-width: 150px;
 }
 
-#title {
-    color: transparent;
+#proj-page h2 {
+    margin-bottom: 75px;
+}
+
+#proj-page h1 {
+    font-size: 150px;
+}
+
+#proj-page {
+    background: -webkit-linear-gradient(transparent, transparent), url(imgs/underwater.jpg) repeat;
+}
+
+#title,
+#proj-page {
+    color: black;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
     background-size: cover;
     background-attachment: fixed;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -ms-background-clip: text;
-    padding: 200px 20px;
 }
 
 @media screen and (max-width: 1100px) {
@@ -120,7 +133,8 @@ h2 {
         padding-top: 300px;
         padding-bottom: 300px;
     }
-    #title h1 {
+    h1,
+    h1 a {
         font-size: 100px;
     }
     #title h2 {
@@ -138,5 +152,8 @@ h2 {
     }
     #abt-page img {
         margin-top: 0;
+    }
+    #proj-page {
+        line-height: 1;
     }
 }
