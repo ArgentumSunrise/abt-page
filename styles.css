@@ -61,7 +61,6 @@ a:hover {
     margin-top: 150px;
     animation: arrowFlash 3s infinite;
     -webkit-animation: arrowFlash 3s ease-in-out 3s infinite;
-    cursor: pointer;
 }
 
 #title {
@@ -124,10 +123,10 @@ h2 {
 
 #proj-page h1 a {
     color: black;
-}
-
-#proj-page h1 a:hover {
-    color: #2980b9;
+    transition: text-shadow .3s ease-in-out;
+    -moz-transition: text-shadow .3s ease-in-out;
+    -webkit-transition: text-shadow .3s ease-in-out;
+    -ms-transition: text-shadow .3s ease-in-out;
 }
 
 #s1 {
@@ -150,6 +149,10 @@ h2 {
     background: -webkit-linear-gradient(transparent, transparent), url(imgs/underwater.jpg) repeat;
 }
 
+.shadow-active {
+    text-shadow: 7px 7px 0 #3498db;
+}
+
 #title,
 #s1,
 #s2,
@@ -169,7 +172,7 @@ h2 {
         padding-top: 300px;
         padding-bottom: 300px;
     }
-    h1,
+    #title h1,
     h1 a {
         font-size: 100px;
     }
@@ -179,6 +182,14 @@ h2 {
     }
     #abt-page {
         padding: 0 60px;
+        line-height: 1.6;
+        margin-bottom: -200px;
+    }
+    #abt-page p {
+        margin-bottom: 50px;
+    }
+    #skill-page h1 {
+        font-size: 100px;
     }
     #abt-page h2 {
         font-size: 35px;
@@ -190,6 +201,6 @@ h2 {
         margin-top: 0;
     }
     #proj-page {
-        line-height: 1;
+        line-height: 0.6;
     }
 }

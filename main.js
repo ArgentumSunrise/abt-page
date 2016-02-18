@@ -1,14 +1,14 @@
 $(document).ready(function () {
 
-    pages = ['abt'];
-
-    $('.arrow').click(function (event) {
-        var id = $(this).parent().attr('id');
-        var target = $("#" + id);
-        if (target.length) {
-            event.preventDefault();
-            scrolling(target, pages.indexOf(id));
-        }
+    $('#proj-page > h1 > a').mouseenter(function () {
+        shadowToggle($(this))
     });
+    $('#proj-page > h1 > a').mouseleave(function () {
+        shadowToggle($(this))
+    });
+
+    function shadowToggle(subject) {
+        subject.toggleClass("shadow-active");
+    }
 
 })
