@@ -183,7 +183,7 @@ h2 {
     #abt-page {
         padding: 0 60px;
         line-height: 1.6;
-        margin-bottom: -200px;
+        margin-bottom: 200px;
     }
     #abt-page p {
         margin-bottom: 50px;
@@ -191,8 +191,10 @@ h2 {
     #skill-page h1 {
         font-size: 100px;
     }
-    #abt-page h2 {
-        font-size: 35px;
+    #abt-page h2,
+    #skill-page h2,
+    #proj-page h2 {
+        font-size: 45px;
     }
     #abt-page p {
         font-size: 25px;
@@ -203,4 +205,56 @@ h2 {
     #proj-page {
         line-height: 0.6;
     }
+    #proj-page a {
+        font-size: 75px;
+    }
+    #proj-page h1 {
+        font-size: 90px;
+    }
+    #proj-page {
+        height: 50vh;
+    }
 }
+
+@media screen and (max-width: 500px) {
+    #title h1,
+    h1 a {
+        font-size: 50px;
+    }
+    #title {
+        padding-top: 200px;
+        padding-bottom: 250px;
+    }
+    .arrow {
+        display: none;
+    }
+    #title h2,
+    #abt-page h2,
+    #skill-page h2,
+    #proj-page h2 {
+        font-size: 25px;
+    }
+    #abt-page {
+        padding: 0 15px;
+        margin-bottom: 200px;
+    }
+    #abt-page img {
+        max-width: 100px;
+    }
+    #abt-page p {
+        font-size: 17px;
+        line-height: 1.4;
+        margin-bottom: 25px;
+    }
+    #proj-page h1 a {
+        font-size: 30px;
+    }
+    #proj-page h1 {
+        font-size: 50px;
+    }
+    .shadow-active {
+        text-shadow: 3px 3px 0 #3498db;
+    }
+}
+
+@media
