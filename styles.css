@@ -93,7 +93,7 @@ h2 {
     font-family: Source Sans Pro;
     font-size: 30px;
     line-height: 1.6;
-    height: 80vh;
+    box-sizing: default;
 }
 
 #abt-page p {
@@ -111,7 +111,7 @@ h2 {
 
 #skill-page {
     padding-bottom: 300px;
-    padding-top: 400px;
+    padding-top: 0;
 }
 
 #proj-page h2 {
@@ -131,23 +131,23 @@ h2 {
 }
 
 #s1 {
-    background: -webkit-linear-gradient(transparent, transparent), url(imgs/space.jpg) repeat;
+    background: -webkit-linear-gradient(transparent, transparent), url(imgs/space-min.jpg) repeat;
 }
 
 #s2 {
-    background: -webkit-linear-gradient(transparent, transparent), url(imgs/mountain2.jpg) repeat;
+    background: -webkit-linear-gradient(transparent, transparent), url(imgs/mountain2-min.jpg) repeat;
 }
 
 #s3 {
-    background: -webkit-linear-gradient(transparent, transparent), url(imgs/aurora.jpg) repeat;
+    background: -webkit-linear-gradient(transparent, transparent), url(imgs/aurora-min.jpg) repeat;
 }
 
 #s4 {
-    background: -webkit-linear-gradient(transparent, transparent), url(imgs/reef.jpg) repeat;
+    background: -webkit-linear-gradient(transparent, transparent), url(imgs/reef-min.jpg) repeat;
 }
 
 #s5 {
-    background: -webkit-linear-gradient(transparent, transparent), url(imgs/underwater.jpg) repeat;
+    background: -webkit-linear-gradient(transparent, transparent), url(imgs/underwater-min.jpg) repeat;
 }
 
 .shadow-active {
